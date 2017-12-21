@@ -1,0 +1,9 @@
+<root>
+<child></child>
+<child></child>
+<child></child>
+<hijo name=nom1 surname=ape1>
+<nieto></nieto>
+</hijo>
+
+</root>

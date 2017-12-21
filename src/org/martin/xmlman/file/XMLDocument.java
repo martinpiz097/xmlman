@@ -9,6 +9,7 @@ import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.StandardOpenOption;
+import java.util.LinkedList;
 
 /**
  *
@@ -72,6 +73,23 @@ public class XMLDocument {
 
     public void setRootTag(Tag rootTag) {
         this.rootTag = rootTag;
+    }
+    
+    private void searchTags(LinkedList<Tag> collector, Tag parent, String name){
+        for (Tag child : parent.getListChilds()) {
+            if (child.getName().equals(name))
+                collector.add(child);
+            if (child.hasChilds())
+                searchTags(collector, child, name);
+        }
+    }
+    
+    public LinkedList<Tag> getTags(String name){
+        LinkedList<Tag> listTags = new LinkedList<>();
+        if (rootTag.getName().equals(name))
+            listTags.add(rootTag);
+        searchTags(listTags, rootTag, name);
+        return listTags;
     }
 
     public File getFile() {

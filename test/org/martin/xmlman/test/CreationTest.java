@@ -18,10 +18,16 @@ public class CreationTest {
         XMLDocument xml = new XMLDocument("test.xml");
         xml.create();
         Tag root = new Tag("root");
+        Tag child = new Tag("hijo", root);
+        child.addAttribute("name", "nom1");
+        child.addAttribute("surname", "ape1");
+        child.addChild("nieto");
         root.addChild("child");
         root.addChild("child");
         root.addChild("child");
+        root.addChild(child);
         xml.setRootTag(root);
         xml.update();
     }
+
 }

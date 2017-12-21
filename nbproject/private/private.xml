@@ -14,15 +14,13 @@
             <file>file:/home/martin/Dropbox/Java/Proyectos/NetBeansProjects/XMLManager/src/org/martin/xmlman/file/XMLDocument.java</file>
         </group>
         <group name="berryAndXML">
-            <file>file:/home/martin/Dropbox/Java/Proyectos/NetBeansProjects/XMLManager/src/org/martin/xmlman/io/StringInputStream.java</file>
-            <file>file:/home/martin/Dropbox/Java/Proyectos/NetBeansProjects/XMLManager/src/org/martin/xmlman/file/Tag.java</file>
-            <file>file:/home/martin/Dropbox/Java/Proyectos/NetBeansProjects/XMLManager/src/org/martin/xmlman/file/XMLDocument.java</file>
-            <file>file:/home/martin/Dropbox/Java/Proyectos/NetBeansProjects/XMLManager/src/org/martin/xmlman/io/StringOutputStream.java</file>
+            <file>file:/home/martin/Dropbox/Java/Proyectos/NetBeansProjects/XMLManager/test/org/martin/xmlman/test/CreationTest.java</file>
             <file>file:/home/martin/Dropbox/Java/Proyectos/NetBeansProjects/XMLManager/src/org/martin/xmlman/file/XMLCreator.java</file>
-            <file>file:/home/martin/Dropbox/Java/Proyectos/NetBeansProjects/XMLManager/src/org/martin/xmlman/file/Attribute.java</file>
-            <file>file:/home/martin/Dropbox/Java/Proyectos/NetBeansProjects/XMLManager/src/org/martin/xmlman/file/TagManager.java</file>
+            <file>file:/home/martin/Dropbox/Java/Proyectos/NetBeansProjects/XMLManager/src/org/martin/xmlman/file/CharsXD.java</file>
             <file>file:/home/martin/Dropbox/Java/Proyectos/NetBeansProjects/XMLManager/src/org/martin/xmlman/file/Symbols.java</file>
-            <file>file:/home/martin/Dropbox/Java/Proyectos/NetBeansProjects/XMLManager/src/org/martin/xmlman/file/ex/BadFormatException.java</file>
+            <file>file:/home/martin/Dropbox/Java/Proyectos/NetBeansProjects/XMLManager/src/org/martin/xmlman/file/Tag.java</file>
+            <file>file:/home/martin/Dropbox/Java/Proyectos/NetBeansProjects/XMLManager/src/org/martin/xmlman/file/TagManager.java</file>
+            <file>file:/home/martin/Dropbox/Java/Proyectos/NetBeansProjects/XMLManager/src/org/martin/xmlman/file/XMLDocument.java</file>
         </group>
     </open-files>
 </project-private>

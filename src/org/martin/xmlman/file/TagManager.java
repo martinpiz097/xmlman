@@ -17,20 +17,29 @@ import org.martin.xmlman.io.StringInputStream;
  */
 public class TagManager {
     public static Tag createTagFrom(String text) throws BadFormatException{
+        text = text.trim();
+        char[] chars = text.toCharArray();
         if (text.contains("<") && text.contains(">") && text.contains("/")) {
-            text = text.trim();
-            
+            StringBuilder sbName = new StringBuilder();
+            StringBuilder sbAttr = new StringBuilder();
             
         }
         else
             throw new BadFormatException("El formato del archivo es invalido");
     }
     
-    public static Tag createTagFrom(File file) throws IOException{
+    public static Tag createTagFrom(File file) throws IOException, BadFormatException{
         String fileLines;
         try (StringInputStream sis = new StringInputStream(new FileInputStream(file))) {
             fileLines = sis.readAll();
         }
         return createTagFrom(fileLines);
     }
+    
+    private Tag createTagFrom(Tag parent, String tagText){
+        StringBuilder sbName = new StringBuilder();
+        char[] chars = tagText.toCharArray();
+        
+    }
+    
 }

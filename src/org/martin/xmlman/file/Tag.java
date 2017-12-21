@@ -11,7 +11,6 @@ import static org.martin.xmlman.file.Symbols.MINOR;
 import static org.martin.xmlman.file.Symbols.NEW_LINE;
 import static org.martin.xmlman.file.Symbols.SLASH;
 import static org.martin.xmlman.file.Symbols.SPACE;
-import sun.invoke.util.ValueConversions;
 
 /**
  *
@@ -34,8 +33,7 @@ public class Tag {
     }
 
     public Tag(String name, Tag parent) {
-        this.name = name;
-        this.parent = parent;
+        this(name, parent, new LinkedList<>(), new LinkedList<>());
     }
 
     public Tag(String name, Tag parent, LinkedList<Attribute> listAttributes, LinkedList<Tag> listChilds) {
@@ -123,6 +121,13 @@ public class Tag {
         listChilds.add(child);
     }
     
+    public void addAttribute(Attribute attr){
+        listAttributes.add(attr);
+    }
+    
+    public void addAttribute(String key, String value){
+        listAttributes.add(new Attribute(key, value));
+    }
     
     public LinkedList<Tag> getListChilds() {
         return listChilds;
@@ -159,12 +164,12 @@ public class Tag {
         return sbTag.toString();
     }
 
-    public static void main(String[] args) {
-        Tag root = new Tag("root");
-        root.addChild("child");
-        root.addChild("child");
-        root.addChild("child");
-        root.getFirstOcurrence("child").listAttributes.add(new Attribute("name", "nom1"));
-    }
-    
+//    public static void main(String[] args) {
+//        Tag root = new Tag("root");
+//        root.addChild("child");
+//        root.addChild("child");
+//        root.addChild("child");
+//        root.getFirstOcurrence("child").listAttributes.add(new Attribute("name", "nom1"));
+//    }
+//    
 }
